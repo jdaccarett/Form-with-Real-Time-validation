@@ -15,7 +15,7 @@ function detect_maxlength(element, maxchars, elementToChange) {
     $(element).keyup(function () {
         if ($(element).val().length > 0 && $(element).val().length <= maxchars) {
             $(elementToChange).css({
-                'color': 'green'
+                'color': 'lawngreen'
             });
         }
         else $(elementToChange).css({
@@ -33,7 +33,7 @@ function detect_onlyLetters(element, elementToChange) {
     $(element).keyup(function () {
         if (/^[a-zA-Z]+$/.test($(element).val())) {
             $(elementToChange).css({
-                'color': 'green'
+                'color': 'lawngreen'
             });
         }
         else $(elementToChange).css({
@@ -51,7 +51,7 @@ function detectValidEmail(element, elementToChange) {
     $(element).keyup(function () {
         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test($(element).val()) === true) {
             $(elementToChange).css({
-                'color': 'green'
+                'color': 'lawngreen'
             });
         }
         else $(elementToChange).css({
