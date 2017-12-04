@@ -29,8 +29,8 @@
                     <!-- Name -->
                     <li id="field_name">
                         <label class="name_label" for="name">Name<span class="name_required">*</span> </label>
-                        <!-- MIN LENGTH 40 chars -->
-                        <input id="name" name="Name" type="text" autocomplete="off" maxlength="40" required>
+                        <!-- MIN LENGTH 40 chars & only letters-->
+                        <input id="name" name="Name" type="text" autocomplete="off" maxlength="40" pattern="^[A-Za-z -]+$" required>
                         <div class="error">
                             <p id="err_detect" class="nameMaxChar_err">maxlength 40 characters</p>
                             <p id="err_detect" class="letterOnly_err">Must be only letters</p>
@@ -39,7 +39,7 @@
                     <!-- Email -->
                     <li id="field_email">
                         <label class="email_label" for="email">Email<span class="email_required">*</span> </label>
-                        <!-- MIN LENGTH 50 chars -->
+                        <!-- MIN LENGTH 50 chars & valid email -->
                         <input id="email" type="email" name="Email" autocomplete="off" maxlength="50" required>
                         <div class="error">
                             <p id="err_detect" class="emailMaxChar_err">maxlength 50 characters</p>
