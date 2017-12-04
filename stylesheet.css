@@ -1,0 +1,210 @@
+/*Fonts*/
+
+@font-face {
+    font-family: Avenir_Book;
+    src: url("./fonts/Avenir_Book.otf");
+}
+
+@font-face {
+    font-family: Avenir_Black;
+    src: url("./fonts/Avenir_Black.otf");
+}
+
+
+/*Main Container*/
+
+.container-fluid {
+    height: 100vh;
+    overflow: auto;
+    background-image: url(assets/bkg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/***** Left Section *****/
+
+.Left_Sec {
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+
+
+/*Logo*/
+
+.logo {
+    width: 300px;
+    margin: 8%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+/*Info*/
+
+.info {
+    color: black;
+    margin: 8%;
+    margin-top: 20%;
+    width: 85%
+}
+
+.info h1 {
+    font-weight: 610;
+}
+
+.info h6 {
+    font-weight: 600;
+    color: black;
+    margin-top: 5%;
+    line-height: 1.5rem;
+}
+
+
+/***** Right Section *****/
+
+.Right_Sec {
+    height: 100vh;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+
+/* Form  */
+
+.form_cont {
+    -webkit-box-shadow: 0px 5px 15px -1px rgba(15, 15, 15, 1);
+    -moz-box-shadow: 0px 5px 15px -1px rgba(15, 15, 15, 1);
+    box-shadow: 0px 5px 15px -1px rgba(15, 15, 15, 1);
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: 5px solid #FF8000;
+    z-index: 4;
+}
+
+.form_cont ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: .75rem;
+}
+
+label {
+    font-family: Avenir_Black;
+    color: #888888;
+    font-size: 15px;
+    margin-bottom: .5rem;
+    letter-spacing: .5px;
+}
+
+li input,
+select {
+    height: 50px;
+    padding-left: 25px;
+    border: 1px solid #888888;
+    width: 100%;
+    color: #888888;
+}
+
+
+/* Change to orange when focused. */
+
+li input:focus,
+li select:focus {
+    border: 2px solid #FF8000;
+}
+
+
+/*Select Grade (options) */
+
+li select {
+    padding-right: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    font-family: Avenir_Book;
+    color: #888888;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url(assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 13px;
+}
+
+
+/*Submit Button*/
+
+li button {
+    font-family: Avenir_Black;
+    height: 50px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #FF8000;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-style: none;
+}
+
+
+/*Error Divs & animations*/
+
+.error {
+    position: relative;
+    font-family: Avenir_Book;
+    font-size: 12px;
+    margin-top: 5px;
+    height: 0px;
+    opacity: 0;
+    transition: height ease 0.5s, opacity 0.5s ease;
+    color: red;
+}
+
+#name:focus + .error {
+    height: 45px;
+    opacity: 1;
+}
+
+#email:focus + .error {
+    height: 45px;
+    opacity: 1;
+}
+
+
+/* Thank You Message & animation*/
+
+.message {
+    position: relative;
+    font-family: Avenir_Book;
+    font-size: 12px;
+    margin-top: 5px;
+    height: 0px;
+    opacity: 0;
+    transition: height ease 0.5s, opacity 0.5s ease;
+    text-align: center;
+}
+
+.message h3 {
+    font-size: 18px;
+    font-family: Avenir_Black;
+}
+
+.slideDown {
+        height: 45px;
+    opacity: 1;
+}
